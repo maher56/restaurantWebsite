@@ -1,0 +1,326 @@
+/*
+$main-color:#35b8be;
+$secondary-color:#bec0c7;
+$secondary-color-hover:rgb(126 130 143);
+$font-family:"Inter, sans-serif";
+$alice-blue:#F5FBFC;
+$alert:#FF8946;
+$heading:#191B22;
+$paragraph:#546285;
+$heading1: 60px;
+$heading2: 55px;
+$heading3: 40px;
+$heading4: 34px;
+$heading5: 28px;
+$heading6: 22px;
+$paragraph-size: 18px;
+$blablba:'<svg class="w-commerce-commercecartopenlinkicon cart-icon" width="17px" height="17px" viewBox="0 0 17 17"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><path d="M2.60592789,2 L0,2 L0,0 L4.39407211,0 L4.84288393,4 L16,4 L16,9.93844589 L3.76940945,12.3694378 L2.60592789,2 Z M15.5,17 C14.6715729,17 14,16.3284271 14,15.5 C14,14.6715729 14.6715729,14 15.5,14 C16.3284271,14 17,14.6715729 17,15.5 C17,16.3284271 16.3284271,17 15.5,17 Z M5.5,17 C4.67157288,17 4,16.3284271 4,15.5 C4,14.6715729 4.67157288,14 5.5,14 C6.32842712,14 7,14.6715729 7,15.5 C7,16.3284271 6.32842712,17 5.5,17 Z" fill="currentColor" fill-rule="nonzero"></path></g></svg>';
+$toggle-icon:'"\e602"';
+*/
+/*
+@media (min-width:576px)@media (min-width:768px)
+@media (min-width:992px)@media (min-width:1200px)
+@media (min-width:1400px)
+*/
+// .fixedNav {
+//     // background-image: url($button-background); 
+// }
+@import "vars.scss";
+@mixin background($url , $liner: false) {
+    @if $liner != false {background: url($url) no-repeat , linear-gradient($liner);}
+    @else {background: url($url) no-repeat;} 
+    background-size: cover;
+}
+* {
+    font-family: $font-family;
+    box-sizing: border-box;
+}
+.text-main {color: $main-color !important;}
+.notice-text {color: $notice-text;font-size: $paragraph-size;}
+.bg-main {background-color: $main-color;}
+a {
+    color: inherit;
+    text-decoration: none; 
+    &:hover {
+        color: inherit;
+    }
+}
+@for $i from 1 to 7 {
+    h#{$i} {
+        font-weight: bold;
+        color: #000;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+}
+.nice-p {
+    width: 75%;
+    margin-right: auto;
+    margin-left: auto;
+}
+.link-main {
+    color: $main-color;
+    text-decoration: underline
+}
+.my-btn {
+    padding: 15px 30px;
+    border-radius: 6px;
+    display: inline-block;
+    font-size: $paragraph-size;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    color: #777;
+    border: #efefef 1px solid;
+}
+.my-btn-active {
+    color: #fff;
+    background-color: $main-color;
+    background-image: url(../img/_Button\ Wave.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: background-color $half-transition ease-in-out;
+    &:hover {
+        background-color: $main-color-hover;
+        color:#fff;
+    }
+}
+.mainNav {
+    position: relative;
+    flex-wrap: wrap;
+    align-items: center;
+    .mainUl {
+        background-color: #fff;
+        z-index: 200;
+        display: flex;
+        flex-basis: 50%;
+        justify-content: space-evenly;
+        align-items: center;
+        li {
+            cursor: pointer;
+            opacity: 0;
+            transition: opacity $main-transition ease-in-out;
+            &.show {
+                opacity: 1;
+            }
+            margin-left: 10px;
+            font-size: $paragraph-size;
+            color: $secondary-color;
+            &.active {
+                color: $main-color;
+            }
+        }
+        @media (max-width:991px) {
+            filter: drop-shadow(0px 20px 10px #f1f1f1);
+            flex-basis: 100%;
+            display: block;
+            width: 100%;
+            left: 0;
+            li {
+                transition: padding-left $half-transition;
+                margin-left: 0px;
+                padding-left: 20px;
+                padding-bottom: 10px;
+                padding-top: 10px;
+                border-bottom: 1px solid $border-color;
+                &:hover {
+                    padding-left: 40px;
+                    background-color: $border-color;
+                }
+            }
+            position: absolute;
+            top: 100%;
+            height: auto;
+            overflow: hidden;
+            transition: height $main-transition;
+            // height: 420px;
+            overflow: hidden;
+            &.hide {
+                transition: height $main-transition;
+                height: 0px !important;
+            }
+            &.fastShow {
+                transition: height 0s;
+                height: auto !important;
+            }
+        }
+    }
+    .toggler {
+        display: flex;
+        height: 55px;
+        width: 55px;
+        padding: 16px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 4px;
+        background-color: #eee;
+        cursor: pointer;
+        span {
+            display: block;
+            &::before {
+                content: "\e602";
+            }
+        }
+        &.active {
+            background-color: $main-color;
+            span {
+                background-color: #fff;
+            }
+        }
+        @media (min-width:992px) {
+            display: none;
+        }
+    }
+    .shoping {
+        color: #fff;
+        padding: 10px 20px;
+        position: relative;
+        &::before {
+            position: absolute;
+            content: "0";
+            top: -9px;
+            right: -9px;
+            color: $main-color;
+            background-color: #fff;
+            padding: 1px 9px;
+            border-radius: 50%;
+            box-shadow: 0px 0px 5px 0px #ccc;
+        }
+    }
+    @media (min-width:992px) {
+        .shoping:first-child {
+            display: none;
+        }
+        flex-wrap: nowrap;
+    }
+    @media (max-width:991px) {
+        .shoping:last-child{
+            display: none;
+        }
+    }
+}
+section.ourMenu {
+    @include background("../img/freshProduct.svg");
+    .menu-content {
+        .food-card {
+            border: 1px solid $border-color;
+            border-radius: 4px;
+            transition: border-color $main-transition;
+            .image {
+                img {
+                    width: 100%;
+                    border-radius: 11px;
+                    margin-bottom: 15px;
+                }
+            }
+            &:hover {
+                border-color: $main-color;
+            }
+            .food-card-body {
+                .order {
+                    input:first-of-type {
+                        width: 60px;
+                        border: 1px solid #ccc;
+                        padding: .20rem;
+                        outline: none;
+                        &:focus {
+                            outline: none;
+                            border: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+header.sayHello {
+    height: 400px;
+    @include background("../img/_YumYum-p-500.png" , (to top , $border-color , $border-color 100%));
+    background-size: unset;
+    background-position-x: center;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    h1 {
+        font-size: 60px;
+        max-width:60%;
+        text-align: center ;
+        transform: translateY(40px);
+        opacity: 0;
+        @media (max-width:575px) {
+            font-size: 40px;
+        }
+        &.animate {
+            animation: up $main-transition 1 ease-in forwards;
+        }
+        @keyframes up {
+            to {
+                transform: translateY(0px);
+                opacity: 1;
+            }
+        }
+    }
+}
+footer.main-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include background("../img/footer.svg" , (to top , $border-color , $border-color 100%));
+    .social {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: transparent;
+        height: fit-content;
+        width: fit-content;
+        a {
+            width: fit-content;
+            height: fit-content;
+            padding: 10px;
+            margin-left: 10px;
+            cursor: pointer;
+            border: 1px solid #818da6;
+            transition: border-color $half-transition;
+            border-radius: 50%;
+            &:hover {
+                border-color: #5a6274;
+            }
+        }
+    }
+}
+#loader {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: $border-color;
+    z-index: 1000000;
+    > div {
+        border: 12px solid #f3f3f3;
+        border-radius: 50%;
+        border-top: 12px solid $main-color;
+        width: 70px;
+        height: 70px;
+        animation: spin 1s linear infinite;
+    }
+    @keyframes spin {
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+}
+    
+    
+.center {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+@import "home.scss";
+@import "order.scss";
+@import "FAQ.scss";
+@import "company.scss";
+@import "concat.scss";

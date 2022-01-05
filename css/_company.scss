@@ -1,0 +1,17 @@
+body#company {
+    section.achievments {
+        @include background("../img/_Group Photo.png");
+        background-attachment: fixed;
+        position: relative;
+        &::before {
+            content: "";
+            background-color:  rgba(0 , 0 , 0 , .3);
+            width: 100%;
+            height: 100%;
+            position: absolute;
+        }
+        > div {
+            position: relative;
+        }
+    }
+}

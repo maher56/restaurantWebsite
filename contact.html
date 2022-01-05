@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body id="contact" style="overflow-x: hidden;">
+    <div id="loader">
+        <div class="center"></div>
+    </div>
+
+    <nav class="fixedNav bg-main py-2 text-center d-none d-sm-block">
+        <div class="container">
+            <p class="notice-text m-0">We're open and available for takeaway & delivery. <a
+                    class="text-light  text-decoration-none" href="order.html">Order Now</a></p>
+        </div>
+    </nav>
+
+
+    <nav class="mainNav bg-white p-4 d-flex justify-content-between aling-items-center">
+        <a href="index.html"><img src="img/_Logo.svg" alt="" class="ms-5 img-fluid" style="width: 40px;"></a>
+        <div class="icons d-flex gap-3">
+            <div class="rounded my-btn my-btn-active shoping ms-3">
+                <a href="order.html" title="order Some Food">
+                    <svg class="w-commerce-commercecartopenlinkicon cart-icon" width="17px" height="17px" viewBox="0 0 17 17">
+                        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <path
+                                d="M2.60592789,2 L0,2 L0,0 L4.39407211,0 L4.84288393,4 L16,4 L16,9.93844589 L3.76940945,12.3694378 L2.60592789,2 Z M15.5,17 C14.6715729,17 14,16.3284271 14,15.5 C14,14.6715729 14.6715729,14 15.5,14 C16.3284271,14 17,14.6715729 17,15.5 C17,16.3284271 16.3284271,17 15.5,17 Z M5.5,17 C4.67157288,17 4,16.3284271 4,15.5 C4,14.6715729 4.67157288,14 5.5,14 C6.32842712,14 7,14.6715729 7,15.5 C7,16.3284271 6.32842712,17 5.5,17 Z"
+                                fill="currentColor" fill-rule="nonzero"></path>
+                        </g>
+                    </svg>
+                </a>
+            </div>
+            <div class="toggler rounded">
+                <span></span>
+            </div>
+        </div>
+        <ul class="mainUl mb-0 list-unstyled me-5">
+            <li class=""><a href="index.html" class="d-block">Home</a></li>
+            <li class=""><a href="order.html" class="d-block">Order</a></li>
+            <li class=""><a href="company.html" class="d-block">Company</a></li>
+            <li class=""><a href="FAQ.html" class="d-block">FAQ</a></li>
+            <li class="active"><a href="contact.html" class="d-block">Contact</a></li>
+            <li class="text-white rounded my-btn my-btn-active shoping ms-3">
+                <a href="order.html" title="order Some Food">
+                    <svg class="w-commerce-commercecartopenlinkicon cart-icon" width="17px" height="17px" viewBox="0 0 17 17">
+                        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <path
+                                d="M2.60592789,2 L0,2 L0,0 L4.39407211,0 L4.84288393,4 L16,4 L16,9.93844589 L3.76940945,12.3694378 L2.60592789,2 Z M15.5,17 C14.6715729,17 14,16.3284271 14,15.5 C14,14.6715729 14.6715729,14 15.5,14 C16.3284271,14 17,14.6715729 17,15.5 C17,16.3284271 16.3284271,17 15.5,17 Z M5.5,17 C4.67157288,17 4,16.3284271 4,15.5 C4,14.6715729 4.67157288,14 5.5,14 C6.32842712,14 7,14.6715729 7,15.5 C7,16.3284271 6.32842712,17 5.5,17 Z"
+                                fill="currentColor" fill-rule="nonzero"></path>
+                        </g>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <header class="sayHello">
+        <h1><span class="text-main">Tell Us</span> If You Have Any Issue</span>
+        </h1>
+    </header>
+    <section class="contact"> 
+        <div class="container">
+            <form action="">
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="username" placeholder="User Name">
+                <label for="username">User Name</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="email" class="form-control" id="email" placeholder="Email">
+                <label for="email">Email</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="password" class="form-control" id="password" placeholder="Password">
+                <label for="password">Password</label>
+            </div>
+            <textarea type="password" class="form-control mb-3" id="floatingPassword" placeholder="Your Text" style="resize: vertical;"></textarea>
+            <input type="submit" value="send" class="my-btn my-btn-active">
+        </form>
+    </div>
+    </section>
+    <footer class="p-5 main-footer d-flex justify-content-center justify-content-sm-between flex-wrap">
+        <div>
+            Built by <a class="link-main" href="">Flowbase</a> · Powered by <a class="link-main" href="">Webflow</a>
+        </div>
+        <div class="social">
+            <a href="#">
+                <img src="img/5e362b9c121267b0fabbef18_social-instagram.svg" alt="">
+            </a>
+            <a href="#">
+                <img src="img/_social-twitter.svg" alt="">
+            </a>
+            <a href="#">
+                <img src="img/_social-youtube.svg" alt="">
+            </a>
+        </div>
+    </footer>
+
+    <script src="js/bootstrap.min.js" type="module"></script>
+    <script src="js/bootstrap.bundle.min.js" type="module"></script>
+    <script src="js/bootstrap.esm.min.js" type="module"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

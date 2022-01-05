@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body id="order" style="overflow-x: hidden;">
+    <div id="loader">
+        <div class="center"></div>
+    </div>
+
+    <nav class="fixedNav bg-main py-2 text-center d-none d-sm-block">
+        <div class="container">
+            <p class="notice-text m-0">We're open and available for takeaway & delivery. <a
+                    class="text-light  text-decoration-none" href="order.html">Order Now</a></p>
+        </div>
+    </nav>
+
+
+    <nav class="mainNav bg-white p-4 d-flex justify-content-between aling-items-center">
+        <a href="index.html"><img src="img/_Logo.svg" alt="" class="ms-5 img-fluid" style="width: 40px;"></a>
+        <div class="icons d-flex gap-3">
+            <div class="rounded my-btn my-btn-active shoping ms-3">
+                    <a href="order.html" title="order Some Food">
+                    <svg class="w-commerce-commercecartopenlinkicon cart-icon" width="17px" height="17px" viewBox="0 0 17 17">
+                        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <path
+                                d="M2.60592789,2 L0,2 L0,0 L4.39407211,0 L4.84288393,4 L16,4 L16,9.93844589 L3.76940945,12.3694378 L2.60592789,2 Z M15.5,17 C14.6715729,17 14,16.3284271 14,15.5 C14,14.6715729 14.6715729,14 15.5,14 C16.3284271,14 17,14.6715729 17,15.5 C17,16.3284271 16.3284271,17 15.5,17 Z M5.5,17 C4.67157288,17 4,16.3284271 4,15.5 C4,14.6715729 4.67157288,14 5.5,14 C6.32842712,14 7,14.6715729 7,15.5 C7,16.3284271 6.32842712,17 5.5,17 Z"
+                                fill="currentColor" fill-rule="nonzero"></path>
+                        </g>
+                    </svg>
+                </a>
+            </div>
+            <div class="toggler rounded">
+                <span></span>
+            </div>
+        </div>
+        <ul class="mainUl mb-0 list-unstyled me-5">
+            <li class=""><a href="index.html" class="d-block">Home</a></li>
+            <li class="active"><a href="order.html" class="d-block">Order</a></li>
+            <li class=""><a href="company.html" class="d-block">Company</a></li>
+            <li class=""><a href="FAQ.html" class="d-block">FAQ</a></li>
+            <li class=""><a href="contact.html" class="d-block">Contact</a></li>
+            <li class="text-white rounded my-btn my-btn-active shoping ms-3">
+                    <a href="order.html" title="order Some Food">
+                    <svg class="w-commerce-commercecartopenlinkicon cart-icon" width="17px" height="17px" viewBox="0 0 17 17">
+                        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <path
+                                d="M2.60592789,2 L0,2 L0,0 L4.39407211,0 L4.84288393,4 L16,4 L16,9.93844589 L3.76940945,12.3694378 L2.60592789,2 Z M15.5,17 C14.6715729,17 14,16.3284271 14,15.5 C14,14.6715729 14.6715729,14 15.5,14 C16.3284271,14 17,14.6715729 17,15.5 C17,16.3284271 16.3284271,17 15.5,17 Z M5.5,17 C4.67157288,17 4,16.3284271 4,15.5 C4,14.6715729 4.67157288,14 5.5,14 C6.32842712,14 7,14.6715729 7,15.5 C7,16.3284271 6.32842712,17 5.5,17 Z"
+                                fill="currentColor" fill-rule="nonzero"></path>
+                        </g>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <header class="sayHello">
+        <h1>Get your food <span class="text-main">delivered</span>, or <span class="text-main">pick-up</span> in store.</h1>
+    </header>
+
+    <section class="ourMenu">
+        <div class="container">
+            <div class="menu-buttons">
+                <div class="row justify-content-center mb-5">
+                    <div id="all" class="d-grid col-11 col-sm-5 col-md-3 mb-2">
+                        <button class="my-btn my-btn-active">Full Menu</button>
+                    </div>
+                    <div id="burgers" class="d-grid col-11 col-sm-5 col-md-3 mb-2">
+                        <button class="my-btn">Burgers</button>
+                    </div>
+                    <div id="sides" class="d-grid col-11 col-sm-5 col-md-3 mb-2">
+                        <button class="my-btn">Sides</button>
+                    </div>
+                    <div id="drinks" class="d-grid col-11 col-sm-5 col-md-3 mb-2">
+                        <button class="my-btn">Drinks</button>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-content gap-5 row justify-content-center align-items-center">
+                <div data-target="burgers all"
+                    class="food-card col-12 col-sm-6 col-md-12 col-lg-6 py-4 px-2 bg-white row justify-content-center align-items-md-center">
+                    <div class="image col-12 col-md-3">
+                        <img src="img/_Burger 01.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="col-12 col-md-9">
+                        <div
+                            class="food-card-head flex-wrap flex-sm-column flex-md-row d-flex align-items-center justify-content-between">
+                            <h4 class="">Burger Classic</h4>
+                            <span class="text-main price h5">$ 10.00 USD</span>
+                        </div>
+                        <div class="food-card-body">
+                            <p class="text-muted">Lorem Ipsum is simply dummy text of the printing and typesetting
+                                industry.</p>
+                            <div class="order">
+                                <input type="number" class="" name="" id="">
+                                <input type="button" value="Add To Cart" class="my-btn my-btn-active"
+                                    style="padding: 4px 10px;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div data-target="burgers all"
+                    class="food-card col-12 col-sm-6 col-md-12 col-lg-6 py-4 px-2 bg-white row justify-content-center align-items-md-center">
+                    <div class="image col-12 col-md-3">
+                        <img src="img/_Burger 02.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="col-12 col-md-9">
+                        <div
+                            class="food-card-head flex-wrap flex-sm-column flex-md-row d-flex align-items-center justify-content-between">
+                            <h4 class="">Burger Spicy</h2>
+                                <span class="text-main price h5">$ 8.00 USD</span>
+                        </div>
+                        <div class="food-card-body">
+                            <p class="text-muted">Lorem Ipsum is simply dummy text of the printing and typesetting
+                                industry.</p>
+                            <div class="order">
+                                <input type="number" class="" name="" id="">
+                                <input type="button" value="Add To Cart" class="my-btn my-btn-active"
+                                    style="padding: 4px 10px;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div data-target="burgers all"
+                    class="food-card col-12 col-sm-6 col-md-12 col-lg-6 py-4 px-2 bg-white row justify-content-center align-items-md-center">
+                    <div class="image col-12 col-md-3">
+                        <img src="img/_Burger 03.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="col-12 col-md-9">
+                        <div
+                            class="food-card-head flex-wrap flex-sm-column flex-md-row d-flex align-items-center justify-content-between">
+                            <h4 class="">Burger Dreams</h4>
+                            <span class="text-main price h5">$ 9.99 USD</span>
+                        </div>
+                        <div class="food-card-body">
+                            <p class="text-muted">Lorem Ipsum is simply dummy text of the printing and typesetting
+                                industry.</p>
+                            <div class="order">
+                                <input type="number" class="" name="" id="">
+                                <input type="button" value="Add To Cart" class="my-btn my-btn-active"
+                                    style="padding: 4px 10px;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div data-target="burgers all"
+                    class="food-card col-12 col-sm-6 col-md-12 col-lg-6 py-4 px-2 bg-white row justify-content-center align-items-md-center">
+                    <div class="image col-12 col-md-3">
+                        <img src="img/_Burger 04.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="col-12 col-md-9">
+                        <div
+                            class="food-card-head flex-wrap flex-sm-column flex-md-row d-flex align-items-center justify-content-between">
+                            <h4 class="">Burger Cali</h2>
+                                <span class="text-main price h5">$ 9.20 USD</span>
+                        </div>
+                        <div class="food-card-body">
+                            <p class="text-muted">Lorem Ipsum is simply dummy text of the printing and typesetting
+                                industry.</p>
+                            <div class="order">
+                                <input type="number" class="" name="" id="">
+                                <input type="button" value="Add To Cart" class="my-btn my-btn-active"
+                                    style="padding: 4px 10px;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div data-target="burgers all"
+                    class="food-card col-12 col-sm-6 col-md-12 col-lg-6 py-4 px-2 bg-white row justify-content-center align-items-md-center">
+                    <div class="image col-12 col-md-3">
+                        <img src="img/_Burger 06.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="col-12 col-md-9">
+                        <div
+                            class="food-card-head flex-wrap flex-sm-column flex-md-row d-flex align-items-center justify-content-between">
+                            <h4 class="">Burger Bacon Buddy</h4>
+                            <span class="text-main price h5">$ 8.00 USD</span>
+                        </div>
+                        <div class="food-card-body">
+                            <p class="text-muted">Lorem Ipsum is simply dummy text of the printing and typesetting
+                                industry.</p>
+                            <div class="order">
+                                <input type="number" class="" name="" id="">
+                                <input type="button" value="Add To Cart" class="my-btn my-btn-active"
+                                    style="padding: 4px 10px;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div data-target="burgers all"
+                    class="food-card col-12 col-sm-6 col-md-12 col-lg-6 py-4 px-2 bg-white row justify-content-center align-items-md-center">
+                    <div class="image col-12 col-md-3">
+                        <img src="img/_Burger 08.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="col-12 col-md-9">
+                        <div
+                            class="food-card-head flex-wrap flex-sm-column flex-md-row d-flex align-items-center justify-content-between">
+                            <h4 class="">Burger Waldo</h4>
+                            <span class="text-main price h5">$ 6.00 USD</span>
+                        </div>
+                        <div class="food-card-body">
+                            <p class="text-muted">Lorem Ipsum is simply dummy text of the printing and typesetting
+                                industry.</p>
+                            <div class="order">
+                                <input type="number" class="" name="" id="">
+                                <input type="button" value="Add To Cart" class="my-btn my-btn-active"
+                                    style="padding: 4px 10px;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div data-target="sides all"
+                    class="food-card col-12 col-sm-6 col-md-12 col-lg-6 py-4 px-2 bg-white row justify-content-center align-items-md-center">
+                    <div class="image col-12 col-md-3">
+                        <img src="img/_Side 02.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="col-12 col-md-9">
+                        <div
+                            class="food-card-head flex-wrap flex-sm-column flex-md-row d-flex align-items-center justify-content-between">
+                            <h4 class="">Fries Cheese</h4>
+                            <span class="text-main price h5">$ 4.00 USD</span>
+                        </div>
+                        <div class="food-card-body">
+                            <p class="text-muted">Lorem Ipsum is simply dummy text of the printing and typesetting
+                                industry.</p>
+                            <div class="order">
+                                <input type="number" class="" name="" id="">
+                                <input type="button" value="Add To Cart" class="my-btn my-btn-active"
+                                    style="padding: 4px 10px;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div data-target="sides all"
+                    class="food-card col-12 col-sm-6 col-md-12 col-lg-6 py-4 px-2 bg-white row justify-content-center align-items-md-center">
+                    <div class="image col-12 col-md-3">
+                        <img src="img/_Side 03.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="col-12 col-md-9">
+                        <div
+                            class="food-card-head flex-wrap flex-sm-column flex-md-row d-flex align-items-center justify-content-between">
+                            <h4 class="">Fries Rustic</h4>
+                            <span class="text-main price h5">$ 5.00 USD</span>
+                        </div>
+                        <div class="food-card-body">
+                            <p class="text-muted">Lorem Ipsum is simply dummy text of the printing and typesetting
+                                industry.</p>
+                            <div class="order">
+                                <input type="number" class="" name="" id="">
+                                <input type="button" value="Add To Cart" class="my-btn my-btn-active"
+                                    style="padding: 4px 10px;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div data-target="sides all"
+                    class="food-card col-12 col-sm-6 col-md-12 col-lg-6 py-4 px-2 bg-white row justify-content-center align-items-md-center">
+                    <div class="image col-12 col-md-3">
+                        <img src="img/_Side 05.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="col-12 col-md-9">
+                        <div
+                            class="food-card-head flex-wrap flex-sm-column flex-md-row d-flex align-items-center justify-content-between">
+                            <h4 class="">Beans Slow Cooked</h4>
+                            <span class="text-main price h5">$ 4.00 USD</span>
+                        </div>
+                        <div class="food-card-body">
+                            <p class="text-muted">Lorem Ipsum is simply dummy text of the printing and typesetting
+                                industry.</p>
+                            <div class="order">
+                                <input type="number" class="" name="" id="">
+                                <input type="button" value="Add To Cart" class="my-btn my-btn-active"
+                                    style="padding: 4px 10px;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div data-target="sides all"
+                    class="food-card col-12 col-sm-6 col-md-12 col-lg-6 py-4 px-2 bg-white row justify-content-center align-items-md-center">
+                    <div class="image col-12 col-md-3">
+                        <img src="img/_Side 06.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="col-12 col-md-9">
+                        <div
+                            class="food-card-head flex-wrap flex-sm-column flex-md-row d-flex align-items-center justify-content-between">
+                            <h4 class="">Salad Ceaser</h4>
+                            <span class="text-main price h5">$ 4.00 USD</span>
+                        </div>
+                        <div class="food-card-body">
+                            <p class="text-muted">Lorem Ipsum is simply dummy text of the printing and typesetting
+                                industry.</p>
+                            <div class="order">
+                                <input type="number" class="" name="" id="">
+                                <input type="button" value="Add To Cart" class="my-btn my-btn-active"
+                                    style="padding: 4px 10px;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div data-target="drinks all"
+                    class="food-card col-12 col-sm-6 col-md-12 col-lg-6 py-4 px-2 bg-white row justify-content-center align-items-md-center">
+                    <div class="image col-12 col-md-3">
+                        <img src="img/_Drink 4.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="col-12 col-md-9">
+                        <div
+                            class="food-card-head flex-wrap flex-sm-column flex-md-row d-flex align-items-center justify-content-between">
+                            <h4 class="">Drink Lime</h4>
+                            <span class="text-main price h5">$ 4.00 USD</span>
+                        </div>
+                        <div class="food-card-body">
+                            <p class="text-muted">Lorem Ipsum is simply dummy text of the printing and typesetting
+                                industry.</p>
+                            <div class="order">
+                                <input type="number" class="" name="" id="">
+                                <input type="button" value="Add To Cart" class="my-btn my-btn-active"
+                                    style="padding: 4px 10px;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div data-target="drinks all"
+                    class="food-card col-12 col-sm-6 col-md-12 col-lg-6 py-4 px-2 bg-white row justify-content-center align-items-md-center">
+                    <div class="image col-12 col-md-3">
+                        <img src="img/_Drink 1.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="col-12 col-md-9">
+                        <div
+                            class="food-card-head flex-wrap flex-sm-column flex-md-row d-flex align-items-center justify-content-between">
+                            <h4 class="">Drink Fig & Lime</h4>
+                            <span class="text-main price h5">$ 7.00 USD</span>
+                        </div>
+                        <div class="food-card-body">
+                            <p class="text-muted">Lorem Ipsum is simply dummy text of the printing and typesetting
+                                industry.</p>
+                            <div class="order">
+                                <input type="number" class="" name="" id="">
+                                <input type="button" value="Add To Cart" class="my-btn my-btn-active"
+                                    style="padding: 4px 10px;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div data-target="drinks all"
+                    class="food-card col-12 col-sm-6 col-md-12 col-lg-6 py-4 px-2 bg-white row justify-content-center align-items-md-center">
+                    <div class="image col-12 col-md-3">
+                        <img src="img/_Drink 2.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="col-12 col-md-9">
+                        <div
+                            class="food-card-head flex-wrap flex-sm-column flex-md-row d-flex align-items-center justify-content-between">
+                            <h4 class="">Drink Liquor</h4>
+                            <span class="text-main price h5">$ 4.00 USD</span>
+                        </div>
+                        <div class="food-card-body">
+                            <p class="text-muted">Lorem Ipsum is simply dummy text of the printing and typesetting
+                                industry.</p>
+                            <div class="order">
+                                <input type="number" class="" name="" id="">
+                                <input type="button" value="Add To Cart" class="my-btn my-btn-active"
+                                    style="padding: 4px 10px;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div data-target="drinks all"
+                    class="food-card col-12 col-sm-6 col-md-12 col-lg-6 py-4 px-2 bg-white row justify-content-center align-items-md-center">
+                    <div class="image col-12 col-md-3">
+                        <img src="img/_Drink 3.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="col-12 col-md-9">
+                        <div
+                            class="food-card-head flex-wrap flex-sm-column flex-md-row d-flex align-items-center justify-content-between">
+                            <h4 class="">Drink Cola</h4>
+                            <span class="text-main price h5">$ 3.00 USD</span>
+                        </div>
+                        <div class="food-card-body">
+                            <p class="text-muted">Lorem Ipsum is simply dummy text of the printing and typesetting
+                                industry.</p>
+                            <div class="order">
+                                <input type="number" class="" name="" id="">
+                                <input type="button" value="Add To Cart" class="my-btn my-btn-active"
+                                    style="padding: 4px 10px;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="my-btn my-btn-active mx-auto my-5" id="showMore" style="width: fit-content;">next ></button>
+        </div>
+    </section>
+
+    <footer class="p-5 main-footer d-flex justify-content-center justify-content-sm-between flex-wrap">
+        <div>
+            Built by <a class="link-main" href="">Flowbase</a> · Powered by <a class="link-main" href="">Webflow</a>
+        </div>
+        <div class="social">
+            <a href="#">
+                <img src="img/5e362b9c121267b0fabbef18_social-instagram.svg" alt="">
+            </a>
+            <a href="#">
+                <img src="img/_social-twitter.svg" alt="">
+            </a>
+            <a href="#">
+                <img src="img/_social-youtube.svg" alt="">
+            </a>
+        </div>
+    </footer>
+
+    <script src="js/bootstrap.min.js" type="module"></script>
+    <script src="js/bootstrap.bundle.min.js" type="module"></script>
+    <script src="js/bootstrap.esm.min.js" type="module"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

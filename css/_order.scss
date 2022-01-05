@@ -1,0 +1,13 @@
+body#order {
+    section.ourMenu {
+        background: unset;
+        padding-top: $section-margin;
+        #showMore.prev {
+            display: block;
+            color: #333;
+            font-size: 14px;
+            background-color: $border-color;
+            border-color: #333;
+        }
+        }
+    }

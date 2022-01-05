@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body id="FAQ" style="overflow-x: hidden;">
+    <div id="loader">
+        <div class="center"></div>
+    </div>
+
+    <nav class="fixedNav bg-main py-2 text-center d-none d-sm-block">
+        <div class="container">
+            <p class="notice-text m-0">We're open and available for takeaway & delivery. <a
+                    class="text-light  text-decoration-none" href="order.html">Order Now</a></p>
+        </div>
+    </nav>
+
+
+    <nav class="mainNav bg-white p-4 d-flex justify-content-between aling-items-center">
+        <a href="index.html"><img src="img/_Logo.svg" alt="" class="ms-5 img-fluid" style="width: 40px;"></a>
+        <div class="icons d-flex gap-3">
+            <div class="rounded my-btn my-btn-active shoping ms-3">
+                <a href="order.html" title="order Some Food">
+                    <svg class="w-commerce-commercecartopenlinkicon cart-icon" width="17px" height="17px" viewBox="0 0 17 17">
+                        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <path
+                                d="M2.60592789,2 L0,2 L0,0 L4.39407211,0 L4.84288393,4 L16,4 L16,9.93844589 L3.76940945,12.3694378 L2.60592789,2 Z M15.5,17 C14.6715729,17 14,16.3284271 14,15.5 C14,14.6715729 14.6715729,14 15.5,14 C16.3284271,14 17,14.6715729 17,15.5 C17,16.3284271 16.3284271,17 15.5,17 Z M5.5,17 C4.67157288,17 4,16.3284271 4,15.5 C4,14.6715729 4.67157288,14 5.5,14 C6.32842712,14 7,14.6715729 7,15.5 C7,16.3284271 6.32842712,17 5.5,17 Z"
+                                fill="currentColor" fill-rule="nonzero"></path>
+                        </g>
+                    </svg>
+                </a>
+            </div>
+            <div class="toggler rounded">
+                <span></span>
+            </div>
+        </div>
+        <ul class="mainUl mb-0 list-unstyled me-5">
+            <li class=""><a href="index.html" class="d-block">Home</a></li>
+            <li class=""><a href="order.html" class="d-block">Order</a></li>
+            <li class=""><a href="company.html" class="d-block">Company</a></li>
+            <li class="active"><a href="FAQ.html" class="d-block">FAQ</a></li>
+            <li class=""><a href="contact.html" class="d-block">Contact</a></li>
+            <li class="text-white rounded my-btn my-btn-active shoping ms-3">
+                <a href="order.html" title="order Some Food">
+                    <svg class="w-commerce-commercecartopenlinkicon cart-icon" width="17px" height="17px" viewBox="0 0 17 17">
+                        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <path
+                                d="M2.60592789,2 L0,2 L0,0 L4.39407211,0 L4.84288393,4 L16,4 L16,9.93844589 L3.76940945,12.3694378 L2.60592789,2 Z M15.5,17 C14.6715729,17 14,16.3284271 14,15.5 C14,14.6715729 14.6715729,14 15.5,14 C16.3284271,14 17,14.6715729 17,15.5 C17,16.3284271 16.3284271,17 15.5,17 Z M5.5,17 C4.67157288,17 4,16.3284271 4,15.5 C4,14.6715729 4.67157288,14 5.5,14 C6.32842712,14 7,14.6715729 7,15.5 C7,16.3284271 6.32842712,17 5.5,17 Z"
+                                fill="currentColor" fill-rule="nonzero"></path>
+                        </g>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <header class="sayHello">
+        <h1>Frequently Asked <span class="text-main">Questions.</span>
+        </h1>
+    </header>
+
+    <section class="ourAnswers">
+        <div class="container">
+            <div class="answers-buttons">
+                <div class="row justify-content-center mb-5">
+                    <div id="food" class="d-grid col-11 col-sm-5 col-md-3 mb-2">
+                        <button class="my-btn my-btn-active">Our Food</button>
+                    </div>
+                    <div id="delivery" class="d-grid col-11 col-sm-5 col-md-3 mb-2">
+                        <button class="my-btn">Our Delivery</button>
+                    </div>
+                    <div id="company" class="d-grid col-11 col-sm-5 col-md-3 mb-2">
+                        <button class="my-btn">Our Company</button>
+                    </div>
+                </div>
+            </div>
+            <div class="answers-content gap-5 row justify-content-center align-items-center">
+                <div class="my-accordion col-12">
+                    <div class="my-accordion-header d-flex justify-content-between" data-target="#food1">
+                        <h2 class="text-main">Do you offer any vegan options?</h2>
+                        <img src="img/_Plus.svg" alt="" class="img-fluid">
+                    </div>
+                    <div class="my-accordion-body" id="food1" data-parent="food">
+                        <p class = "content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis
+                        cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et
+                        justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere. Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare,
+                        eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem
+                        imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
+                    </div>
+                </div>
+                <div class="my-accordion col">
+                    <div class="my-accordion-header d-flex justify-content-between" data-target="#food2">
+                        <h2 class="text-main">Do you offer any gluten free options?</h2>
+                        <img src="img/_Plus.svg" alt="" class="img-fluid">
+                    </div>
+                    <div class="my-accordion-body" id="food2" data-parent="food">
+                        <p class = "content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis
+                        cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et
+                        justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere. Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare,
+                        eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem
+                        imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
+                    </div>
+                </div>
+                <div class="my-accordion col-12">
+                    <div class="my-accordion-header d-flex justify-content-between" data-target="#food3">
+                        <h2 class="text-main">Can I clone these sections?</h2>
+                        <img src="img/_Plus.svg" alt="" class="img-fluid">
+                    </div>
+                    <div class="my-accordion-body" id="food3" data-parent="food">
+                        <p class = "content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis
+                        cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et
+                        justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere. Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare,
+                        eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem
+                        imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
+                    </div>
+                </div>
+                <div class="my-accordion col-12">
+                    <div class="my-accordion-header d-flex justify-content-between" data-target="#food4">
+                        <h2 class="text-main">Why is Webflow so amazing?</h2>
+                        <img src="img/_Plus.svg" alt="" class="img-fluid">
+                    </div>
+                    <div class="my-accordion-body" id="food4" data-parent="food">
+                        <p class = "content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis
+                        cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et
+                        justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere. Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare,
+                        eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem
+                        imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
+                    </div>
+                </div>
+                <div class="my-accordion col-12">
+                    <div class="my-accordion-header d-flex justify-content-between" data-target="#food5">
+                        <h2 class="text-main">Do we need to write a business plan?</h2>
+                        <img src="img/_Plus.svg" alt="" class="img-fluid">
+                    </div>
+                    <div class="my-accordion-body" id="food5" data-parent="food">
+                        <p class = "content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis
+                        cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et
+                        justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere. Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare,
+                        eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem
+                        imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
+                    </div>
+                </div>
+                <div class="my-accordion col-12">
+                    <div class="my-accordion-header d-flex justify-content-between" data-target="#food6">
+                        <h2 class="text-main">How can we get funding for our start up?</h2>
+                        <img src="img/_Plus.svg" alt="" class="img-fluid">
+                    </div>
+                    <div class="my-accordion-body" id="food6" data-parent="food">
+                        <p class = "content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis
+                        cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et
+                        justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere. Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare,
+                        eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem
+                        imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
+                    </div>
+                </div>
+                <div class="my-accordion col-12">
+                    <div class="my-accordion-header d-flex justify-content-between" data-target="#delivery1">
+                        <h2 class="text-main">Do you offer any vegan options?</h2>
+                        <img src="img/_Plus.svg" alt="" class="img-fluid">
+                    </div>
+                    <div class="my-accordion-body" id="delivery1" data-parent="delivery">
+                        <p class = "content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis
+                        cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et
+                        justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere. Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare,
+                        eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem
+                        imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
+                    </div>
+                </div>
+                <div class="my-accordion col-12">
+                    <div class="my-accordion-header d-flex justify-content-between" data-target="#delivery2">
+                        <h2 class="text-main">Do you offer any gluten free options?</h2>
+                        <img src="img/_Plus.svg" alt="" class="img-fluid">
+                    </div>
+                    <div class="my-accordion-body" id="delivery2" data-parent="delivery">
+                        <p class = "content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis
+                        cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et
+                        justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere. Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare,
+                        eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem
+                        imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
+                    </div>
+                </div>
+                <div class="my-accordion col-12">
+                    <div class="my-accordion-header d-flex justify-content-between" data-target="#delivery3">
+                        <h2 class="text-main">Can I clone these sections?</h2>
+                        <img src="img/_Plus.svg" alt="" class="img-fluid">
+                    </div>
+                    <div class="my-accordion-body" id="delivery3" data-parent="delivery">
+                        <p class = "content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis
+                        cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et
+                        justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere. Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare,
+                        eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem
+                        imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
+                    </div>
+                </div>
+                <div class="my-accordion col-12">
+                    <div class="my-accordion-header d-flex justify-content-between" data-target="#delivery4">
+                        <h2 class="text-main">Why is Webflow so amazing?</h2>
+                        <img src="img/_Plus.svg" alt="" class="img-fluid">
+                    </div>
+                    <div class="my-accordion-body" id="delivery4" data-parent="delivery">
+                        <p class = "content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis
+                        cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et
+                        justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere. Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare,
+                        eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem
+                        imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
+                    </div>
+                </div>
+                <div class="my-accordion col-12">
+                    <div class="my-accordion-header d-flex justify-content-between" data-target="#delivery5">
+                        <h2 class="text-main">Do we need to write a business plan?</h2>
+                        <img src="img/_Plus.svg" alt="" class="img-fluid">
+                    </div>
+                    <div class="my-accordion-body" id="delivery5" data-parent="delivery">
+                        <p class = "content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis
+                        cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et
+                        justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere. Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare,
+                        eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem
+                        imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
+                    </div>
+                </div>
+                <div class="my-accordion col-12">
+                    <div class="my-accordion-header d-flex justify-content-between" data-target="#delivery6">
+                        <h2 class="text-main">How can we get funding for our start up?</h2>
+                        <img src="img/_Plus.svg" alt="" class="img-fluid">
+                    </div>
+                    <div class="my-accordion-body" id="delivery6" data-parent="delivery">
+                        <p class = "content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis
+                        cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et
+                        justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere. Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare,
+                        eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem
+                        imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
+                    </div>
+                </div>
+                <div class="my-accordion col-12">
+                    <div class="my-accordion-header d-flex justify-content-between" data-target="#company1">
+                        <h2 class="text-main">Do you offer any vegan options?</h2>
+                        <img src="img/_Plus.svg" alt="" class="img-fluid">
+                    </div>
+                    <div class="my-accordion-body" id="company1" data-parent="company">
+                        <p class = "content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis
+                        cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et
+                        justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere. Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare,
+                        eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem
+                        imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
+                    </div>
+                </div>
+                <div class="my-accordion col-12">
+                    <div class="my-accordion-header d-flex justify-content-between" data-target="#company2">
+                        <h2 class="text-main">Do you offer any gluten free options?</h2>
+                        <img src="img/_Plus.svg" alt="" class="img-fluid">
+                    </div>
+                    <div class="my-accordion-body" id="company2" data-parent="company">
+                        <p class = "content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis
+                        cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et
+                        justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere. Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare,
+                        eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem
+                        imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
+                    </div>
+                </div>
+                <div class="my-accordion col-12">
+                    <div class="my-accordion-header d-flex justify-content-between" data-target="#company3">
+                        <h2 class="text-main">Can I clone these sections?</h2>
+                        <img src="img/_Plus.svg" alt="" class="img-fluid">
+                    </div>
+                    <div class="my-accordion-body" id="company3" data-parent="company">
+                        <p class = "content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis
+                        cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et
+                        justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere. Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare,
+                        eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem
+                        imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
+                    </div>
+                </div>
+                <div class="my-accordion col-12">
+                    <div class="my-accordion-header d-flex justify-content-between" data-target="#company4">
+                        <h2 class="text-main">Why is Webflow so amazing?</h2>
+                        <img src="img/_Plus.svg" alt="" class="img-fluid">
+                    </div>
+                    <div class="my-accordion-body" id="company4" data-parent="company">
+                        <p class = "content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis
+                        cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et
+                        justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere. Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare,
+                        eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem
+                        imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
+                    </div>
+                </div>
+                <div class="my-accordion col-12">
+                    <div class="my-accordion-header d-flex justify-content-between" data-target="#company5">
+                        <h2 class="text-main">Do we need to write a business plan?</h2>
+                        <img src="img/_Plus.svg" alt="" class="img-fluid">
+                    </div>
+                    <div class="my-accordion-body" id="company5" data-parent="company">
+                        <p class = "content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis
+                        cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et
+                        justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere. Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare,
+                        eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem
+                        imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
+                    </div>
+                </div>
+                <div class="my-accordion col-12">
+                    <div class="my-accordion-header d-flex justify-content-between" data-target="#company6">
+                        <h2 class="text-main">How can we get funding for our start up?</h2>
+                        <img src="img/_Plus.svg" alt="" class="img-fluid">
+                    </div>
+                    <div class="my-accordion-body" id="company6" data-parent="company">
+                        <p class = "content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis
+                        cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et
+                        justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere. Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare,
+                        eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem
+                        imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="my-btn my-btn-active mx-auto my-5" id="showMore">next ></button>
+        </div>
+    </section>
+
+    <footer class="p-5 main-footer d-flex justify-content-center justify-content-sm-between flex-wrap">
+        <div>
+            Built by <a class="link-main" href="">Flowbase</a> · Powered by <a class="link-main" href="">Webflow</a>
+        </div>
+        <div class="social">
+            <a href="#">
+                <img src="img/5e362b9c121267b0fabbef18_social-instagram.svg" alt="">
+            </a>
+            <a href="#">
+                <img src="img/_social-twitter.svg" alt="">
+            </a>
+            <a href="#">
+                <img src="img/_social-youtube.svg" alt="">
+            </a>
+        </div>
+    </footer>
+
+    <script src="js/bootstrap.min.js" type="module"></script>
+    <script src="js/bootstrap.bundle.min.js" type="module"></script>
+    <script src="js/bootstrap.esm.min.js" type="module"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
