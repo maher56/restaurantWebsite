@@ -155,17 +155,10 @@ a {
         border-radius: 4px;
         background-color: #eee;
         cursor: pointer;
-        span {
-            display: block;
-            &::before {
-                content: "\e602";
-            }
-        }
+        svg {fill: #000;}
         &.active {
+            svg {fill: #fff;}
             background-color: $main-color;
-            span {
-                background-color: #fff;
-            }
         }
         @media (min-width:992px) {
             display: none;

@@ -1,1 +1,498 @@
-﻿*{font-family:"Inter, sans-serif";box-sizing:border-box}.text-main{color:#35b8be !important}.notice-text{color:rgba(255,255,255,.8);font-size:18px}.bg-main{background-color:#35b8be}a{color:inherit;text-decoration:none}a:hover{color:inherit}h1{font-weight:bold;color:#000;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif}h2{font-weight:bold;color:#000;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif}h3{font-weight:bold;color:#000;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif}h4{font-weight:bold;color:#000;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif}h5{font-weight:bold;color:#000;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif}h6{font-weight:bold;color:#000;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif}.nice-p{width:75%;margin-right:auto;margin-left:auto}.link-main{color:#35b8be;text-decoration:underline}.my-btn{padding:15px 30px;border-radius:6px;display:inline-block;font-size:18px;color:#fff;cursor:pointer;border:none;outline:none;background:none;color:#777;border:#efefef 1px solid}.my-btn-active{color:#fff;background-color:#35b8be;background-image:url("../img/ButtonWave.svg");background-size:cover;background-repeat:no-repeat;transition:background-color .2s ease-in-out}.my-btn-active:hover{background-color:#2faeb4;color:#fff}.mainNav{position:relative;flex-wrap:wrap;align-items:center}.mainNav .mainUl{background-color:#fff;z-index:200;display:flex;flex-basis:50%;justify-content:space-evenly;align-items:center}.mainNav .mainUl li{cursor:pointer;opacity:0;transition:opacity .4s ease-in-out;margin-left:10px;font-size:18px;color:#bec0c7}.mainNav .mainUl li.show{opacity:1}.mainNav .mainUl li.active{color:#35b8be}@media(max-width: 991px){.mainNav .mainUl{filter:drop-shadow(0px 20px 10px #f1f1f1);flex-basis:100%;display:block;width:100%;left:0;position:absolute;top:100%;height:auto;overflow:hidden;transition:height .4s;overflow:hidden}.mainNav .mainUl li{transition:padding-left .2s;margin-left:0px;padding-left:20px;padding-bottom:10px;padding-top:10px;border-bottom:1px solid #f6fbfc}.mainNav .mainUl li:hover{padding-left:40px;background-color:#f6fbfc}.mainNav .mainUl.hide{transition:height .4s;height:0px !important}.mainNav .mainUl.fastShow{transition:height 0s;height:auto !important}}.mainNav .toggler{display:flex;height:55px;width:55px;padding:16px;justify-content:center;align-items:center;border-radius:4px;background-color:#eee;cursor:pointer}.mainNav .toggler span{display:block}.mainNav .toggler span::before{content:""}.mainNav .toggler.active{background-color:#35b8be}.mainNav .toggler.active span{background-color:#fff}@media(min-width: 992px){.mainNav .toggler{display:none}}.mainNav .shoping{color:#fff;padding:10px 20px;position:relative}.mainNav .shoping::before{position:absolute;content:"0";top:-9px;right:-9px;color:#35b8be;background-color:#fff;padding:1px 9px;border-radius:50%;box-shadow:0px 0px 5px 0px #ccc}@media(min-width: 992px){.mainNav{flex-wrap:nowrap}.mainNav .shoping:first-child{display:none}}@media(max-width: 991px){.mainNav .shoping:last-child{display:none}}section.ourMenu{background:url("../img/freshProduct.svg") no-repeat;background-size:cover}section.ourMenu .menu-content .food-card{border:1px solid #f6fbfc;border-radius:4px;transition:border-color .4s}section.ourMenu .menu-content .food-card .image img{width:100%;border-radius:11px;margin-bottom:15px}section.ourMenu .menu-content .food-card:hover{border-color:#35b8be}section.ourMenu .menu-content .food-card .food-card-body .order input:first-of-type{width:60px;border:1px solid #ccc;padding:.2rem;outline:none}section.ourMenu .menu-content .food-card .food-card-body .order input:first-of-type:focus{outline:none;border:none}header.sayHello{height:400px;background:url("../img/YumYum.png") no-repeat,linear-gradient(to top, #f6fbfc, #f6fbfc 100%);background-size:cover;background-size:unset;background-position-x:center;display:flex;align-items:center;justify-content:center}header.sayHello h1{font-size:60px;max-width:60%;text-align:center;transform:translateY(40px);opacity:0}@media(max-width: 575px){header.sayHello h1{font-size:40px}}header.sayHello h1.animate{animation:up .4s 1 ease-in forwards}@keyframes up{to{transform:translateY(0px);opacity:1}}footer.main-footer{display:flex;align-items:center;justify-content:space-between;background:url("../img/footer.svg") no-repeat,linear-gradient(to top, #f6fbfc, #f6fbfc 100%);background-size:cover}footer.main-footer .social{display:flex;align-items:center;justify-content:center;background-color:transparent;height:fit-content;width:fit-content}footer.main-footer .social a{width:fit-content;height:fit-content;padding:10px;margin-left:10px;cursor:pointer;border:1px solid #818da6;transition:border-color .2s;border-radius:50%}footer.main-footer .social a:hover{border-color:#5a6274}#loader{position:fixed;width:100%;height:100%;background-color:#f6fbfc;z-index:1000000}#loader>div{border:12px solid #f3f3f3;border-radius:50%;border-top:12px solid #35b8be;width:70px;height:70px;animation:spin 1s linear infinite}@keyframes spin{100%{transform:rotate(360deg)}}.center{position:absolute;top:0;bottom:0;left:0;right:0;margin:auto}body#home section{padding-top:120px;padding-bottom:120px}body#home section.intro{background:url("../img/Header.svg") no-repeat;background-size:cover}body#home section.about{background:url("../img/YumYum.png") no-repeat,linear-gradient(to top, #f6fbfc, #f6fbfc 100%);background-size:cover}body#home section.howWorks img{width:300px}body#home section .line{display:flex;height:100px;justify-content:center;align-items:center}body#home section .line div{width:100%;height:100%;border:1px #bec0c7 dashed}@media(min-width: 992px){body#home section .line{height:250px;flex-basis:100%}body#home section .line div{height:unset}}body#home section.ourStore{background:url("../img/YumYum.png") no-repeat,linear-gradient(to top, #f6fbfc, #f6fbfc 100%);background-size:cover}body#home section.support{display:flex;padding-left:30px;padding-right:30px;justify-content:space-between}body#home section.support div:first-of-type{background:url("../img/GroupPhoto.png") no-repeat;background-size:cover}body#home section.support div:last-of-type{background:url("../img/footer.svg") no-repeat,linear-gradient(to top, #35b8be, #35b8be 100%);background-size:cover}body#home section.support div:last-of-type span{color:#1b9097}body#home section.support div{flex-basis:49%;height:500px;background-size:cover;background-repeat:no-repeat}@media(max-width: 991px){body#home section.support{flex-direction:column}body#home section.support div{margin-bottom:25px;flex-basis:unset;width:100%}}body#order section.ourMenu{background:unset;padding-top:120px}body#order section.ourMenu #showMore.prev{display:block;color:#333;font-size:14px;background-color:#f6fbfc;border-color:#333}body#FAQ section.ourAnswers{padding-top:120px;padding-bottom:120px}body#FAQ section.ourAnswers .answers-content .my-accordion .my-accordion-header{border-bottom:1px solid rgba(0,0,0,.3);padding-bottom:1.2rem;cursor:pointer}body#FAQ section.ourAnswers .answers-content .my-accordion .my-accordion-body{padding-left:.6rem;padding-right:.6rem;height:auto;overflow:hidden;color:#7e828f;font-size:1.3rem;color:#7e828f;line-height:1.8;letter-spacing:-0.2px;margin-bottom:0px;transition:height .4s,padding .4s;height:auto;padding-top:1.25rem;padding-bottom:1.25rem}body#FAQ section.ourAnswers .answers-content .my-accordion .my-accordion-body.hide{height:0 !important;padding-top:0rem;padding-bottom:0rem}body#company section.achievments{background:url("../img/GroupPhoto.png") no-repeat;background-size:cover;background-attachment:fixed;position:relative}body#company section.achievments::before{content:"";background-color:rgba(0,0,0,.3);width:100%;height:100%;position:absolute}body#company section.achievments>div{position:relative}body#contact section.contact{padding-top:120px;padding-bottom:120px}/*# sourceMappingURL=main.css.map */
+/*
+$main-color:#35b8be;
+$secondary-color:#bec0c7;
+$secondary-color-hover:rgb(126 130 143);
+$font-family:"Inter, sans-serif";
+$alice-blue:#F5FBFC;
+$alert:#FF8946;
+$heading:#191B22;
+$paragraph:#546285;
+$heading1: 60px;
+$heading2: 55px;
+$heading3: 40px;
+$heading4: 34px;
+$heading5: 28px;
+$heading6: 22px;
+$paragraph-size: 18px;
+$toggle-icon:'"\e602"';
+*/
+/*
+@media (min-width:576px)@media (min-width:768px)
+@media (min-width:992px)@media (min-width:1200px)
+@media (min-width:1400px)
+*/
+* {
+  font-family: "Inter, sans-serif";
+  box-sizing: border-box;
+}
+
+.text-main {
+  color: #35b8be !important;
+}
+
+.notice-text {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 18px;
+}
+
+.bg-main {
+  background-color: #35b8be;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+a:hover {
+  color: inherit;
+}
+
+h1 {
+  font-weight: bold;
+  color: #000;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+h2 {
+  font-weight: bold;
+  color: #000;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+h3 {
+  font-weight: bold;
+  color: #000;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+h4 {
+  font-weight: bold;
+  color: #000;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+h5 {
+  font-weight: bold;
+  color: #000;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+h6 {
+  font-weight: bold;
+  color: #000;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.nice-p {
+  width: 75%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.link-main {
+  color: #35b8be;
+  text-decoration: underline;
+}
+
+.my-btn {
+  padding: 15px 30px;
+  border-radius: 6px;
+  display: inline-block;
+  font-size: 18px;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  color: #777;
+  border: #efefef 1px solid;
+}
+
+.my-btn-active {
+  color: #fff;
+  background-color: #35b8be;
+  background-image: url("../img/ButtonWave.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: background-color 0.2s ease-in-out;
+}
+.my-btn-active:hover {
+  background-color: #2faeb4;
+  color: #fff;
+}
+
+.mainNav {
+  position: relative;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.mainNav .mainUl {
+  background-color: #fff;
+  z-index: 200;
+  display: flex;
+  flex-basis: 50%;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.mainNav .mainUl li {
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+  margin-left: 10px;
+  font-size: 18px;
+  color: #bec0c7;
+}
+.mainNav .mainUl li.show {
+  opacity: 1;
+}
+.mainNav .mainUl li.active {
+  color: #35b8be;
+}
+@media (max-width: 991px) {
+  .mainNav .mainUl {
+    filter: drop-shadow(0px 20px 10px #f1f1f1);
+    flex-basis: 100%;
+    display: block;
+    width: 100%;
+    left: 0;
+    position: absolute;
+    top: 100%;
+    height: auto;
+    overflow: hidden;
+    transition: height 0.4s;
+    overflow: hidden;
+  }
+  .mainNav .mainUl li {
+    transition: padding-left 0.2s;
+    margin-left: 0px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-bottom: 1px solid #f6fbfc;
+  }
+  .mainNav .mainUl li:hover {
+    padding-left: 40px;
+    background-color: #f6fbfc;
+  }
+  .mainNav .mainUl.hide {
+    transition: height 0.4s;
+    height: 0px !important;
+  }
+  .mainNav .mainUl.fastShow {
+    transition: height 0s;
+    height: auto !important;
+  }
+}
+.mainNav .toggler {
+  display: flex;
+  height: 55px;
+  width: 55px;
+  padding: 16px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  background-color: #eee;
+  cursor: pointer;
+}
+.mainNav .toggler svg {
+  fill: #000;
+}
+.mainNav .toggler.active {
+  background-color: #35b8be;
+}
+.mainNav .toggler.active svg {
+  fill: #fff;
+}
+@media (min-width: 992px) {
+  .mainNav .toggler {
+    display: none;
+  }
+}
+.mainNav .shoping {
+  color: #fff;
+  padding: 10px 20px;
+  position: relative;
+}
+.mainNav .shoping::before {
+  position: absolute;
+  content: "0";
+  top: -9px;
+  right: -9px;
+  color: #35b8be;
+  background-color: #fff;
+  padding: 1px 9px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 5px 0px #ccc;
+}
+@media (min-width: 992px) {
+  .mainNav {
+    flex-wrap: nowrap;
+  }
+  .mainNav .shoping:first-child {
+    display: none;
+  }
+}
+@media (max-width: 991px) {
+  .mainNav .shoping:last-child {
+    display: none;
+  }
+}
+
+section.ourMenu {
+  background: url("../img/freshProduct.svg") no-repeat;
+  background-size: cover;
+}
+section.ourMenu .menu-content .food-card {
+  border: 1px solid #f6fbfc;
+  border-radius: 4px;
+  transition: border-color 0.4s;
+}
+section.ourMenu .menu-content .food-card .image img {
+  width: 100%;
+  border-radius: 11px;
+  margin-bottom: 15px;
+}
+section.ourMenu .menu-content .food-card:hover {
+  border-color: #35b8be;
+}
+section.ourMenu .menu-content .food-card .food-card-body .order input:first-of-type {
+  width: 60px;
+  border: 1px solid #ccc;
+  padding: 0.2rem;
+  outline: none;
+}
+section.ourMenu .menu-content .food-card .food-card-body .order input:first-of-type:focus {
+  outline: none;
+  border: none;
+}
+
+header.sayHello {
+  height: 400px;
+  background: url("../img/YumYum.png") no-repeat, linear-gradient(to top, #f6fbfc, #f6fbfc 100%);
+  background-size: cover;
+  background-size: unset;
+  background-position-x: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header.sayHello h1 {
+  font-size: 60px;
+  max-width: 60%;
+  text-align: center;
+  transform: translateY(40px);
+  opacity: 0;
+}
+@media (max-width: 575px) {
+  header.sayHello h1 {
+    font-size: 40px;
+  }
+}
+header.sayHello h1.animate {
+  animation: up 0.4s 1 ease-in forwards;
+}
+@keyframes up {
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+footer.main-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: url("../img/footer.svg") no-repeat, linear-gradient(to top, #f6fbfc, #f6fbfc 100%);
+  background-size: cover;
+}
+footer.main-footer .social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  height: fit-content;
+  width: fit-content;
+}
+footer.main-footer .social a {
+  width: fit-content;
+  height: fit-content;
+  padding: 10px;
+  margin-left: 10px;
+  cursor: pointer;
+  border: 1px solid #818da6;
+  transition: border-color 0.2s;
+  border-radius: 50%;
+}
+footer.main-footer .social a:hover {
+  border-color: #5a6274;
+}
+
+#loader {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: #f6fbfc;
+  z-index: 1000000;
+}
+#loader > div {
+  border: 12px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 12px solid #35b8be;
+  width: 70px;
+  height: 70px;
+  animation: spin 1s linear infinite;
+}
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.center {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+body#home section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+body#home section.intro {
+  background: url("../img/Header.svg") no-repeat;
+  background-size: cover;
+}
+body#home section.about {
+  background: url("../img/YumYum.png") no-repeat, linear-gradient(to top, #f6fbfc, #f6fbfc 100%);
+  background-size: cover;
+}
+body#home section.howWorks img {
+  width: 300px;
+}
+body#home section .line {
+  display: flex;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+}
+body#home section .line div {
+  width: 100%;
+  height: 100%;
+  border: 1px #bec0c7 dashed;
+}
+@media (min-width: 992px) {
+  body#home section .line {
+    height: 250px;
+    flex-basis: 100%;
+  }
+  body#home section .line div {
+    height: unset;
+  }
+}
+body#home section.ourStore {
+  background: url("../img/YumYum.png") no-repeat, linear-gradient(to top, #f6fbfc, #f6fbfc 100%);
+  background-size: cover;
+}
+body#home section.support {
+  display: flex;
+  padding-left: 30px;
+  padding-right: 30px;
+  justify-content: space-between;
+}
+body#home section.support div:first-of-type {
+  background: url("../img/GroupPhoto.png") no-repeat;
+  background-size: cover;
+}
+body#home section.support div:last-of-type {
+  background: url("../img/footer.svg") no-repeat, linear-gradient(to top, #35b8be, #35b8be 100%);
+  background-size: cover;
+}
+body#home section.support div:last-of-type span {
+  color: #1b9097;
+}
+body#home section.support div {
+  flex-basis: 49%;
+  height: 500px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@media (max-width: 991px) {
+  body#home section.support {
+    flex-direction: column;
+  }
+  body#home section.support div {
+    margin-bottom: 25px;
+    flex-basis: unset;
+    width: 100%;
+  }
+}
+
+body#order section.ourMenu {
+  background: unset;
+  padding-top: 120px;
+}
+body#order section.ourMenu #showMore.prev {
+  display: block;
+  color: #333;
+  font-size: 14px;
+  background-color: #f6fbfc;
+  border-color: #333;
+}
+
+body#FAQ section.ourAnswers {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+body#FAQ section.ourAnswers .answers-content .my-accordion .my-accordion-header {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  padding-bottom: 1.2rem;
+  cursor: pointer;
+}
+body#FAQ section.ourAnswers .answers-content .my-accordion .my-accordion-body {
+  padding-left: 0.6rem;
+  padding-right: 0.6rem;
+  height: auto;
+  overflow: hidden;
+  color: #7e828f;
+  font-size: 1.3rem;
+  color: #7e828f;
+  line-height: 1.8;
+  letter-spacing: -0.2px;
+  margin-bottom: 0px;
+  transition: height 0.4s, padding 0.4s;
+  height: auto;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+body#FAQ section.ourAnswers .answers-content .my-accordion .my-accordion-body.hide {
+  height: 0 !important;
+  padding-top: 0rem;
+  padding-bottom: 0rem;
+}
+
+body#company section.achievments {
+  background: url("../img/GroupPhoto.png") no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+}
+body#company section.achievments::before {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+body#company section.achievments > div {
+  position: relative;
+}
+
+body#contact section.contact {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+/*# sourceMappingURL=main.css.map */
