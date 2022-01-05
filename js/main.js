@@ -159,10 +159,12 @@ $(window).resize(()=> {toggleMainUl()});
 })
 document.onreadystatechange = function() {
     if (document.readyState !== "complete") {
-        $("body").hide(0);
+        $("body").css("opacity" , 0)
         $("#loader").show(0);
+        console.log("not ready yet")
     } else {
-        $("body").show(0);
+        console.log("ready")
+        $("body").css("opacity" , 1)
         $("#loader").hide(0);
     }
 };

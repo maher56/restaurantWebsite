@@ -1,6 +1,6 @@
 body#company {
     section.achievments {
-        @include background("../img/_Group Photo.png");
+        @include background("../img/GroupPhoto.png");
         background-attachment: fixed;
         position: relative;
         &::before {

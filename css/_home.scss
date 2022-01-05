@@ -4,7 +4,7 @@ section {
     padding-top: $section-margin;
     padding-bottom: $section-margin;
     &.intro {@include background("../img/Header.svg");}
-    &.about {@include background("../img/_YumYum-p-500.png" , (to top , $border-color , $border-color 100%))}
+    &.about {@include background("../img/YumYum.png" , (to top , $border-color , $border-color 100%))}
     &.howWorks {img {width: 300px;}}
     .line {
         display: flex;
@@ -25,13 +25,13 @@ section {
             }
         }
     }
-    &.ourStore {@include background("../img/_YumYum-p-500.png" , (to top , $border-color , $border-color 100%))}
+    &.ourStore {@include background("../img/YumYum.png" , (to top , $border-color , $border-color 100%))}
     &.support {
         display: flex;
         padding-left: 30px;
         padding-right: 30px;
         justify-content: space-between;
-        div:first-of-type {@include background("../img/_Group Photo.png");}
+        div:first-of-type {@include background("../img/GroupPhoto.png");}
         div:last-of-type {
             @include background("../img/footer.svg" , (to top , $main-color , $main-color 100%));
             span {color: #1b9097;}
